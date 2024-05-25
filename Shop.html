@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ramesh Silver</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="shopcss.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+.dropbtn {
+  background-color: rgb(55, 99, 219);
+  border-radius: 10px;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropbtn {
+  color: white;
+  background-color: red;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.column {
+  font-size: 16px;
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  background-color: rgb(126, 122, 122);
+  height: 350px;
+}
+.column a {
+  border-bottom: 2px dotted lightgray;
+  float: none;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.column a:hover {
+  background-color: lightgray;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#777">
+    <a class="navbar-brand" href="#home">
+      <img src="logof.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
+      Ramesh Silver
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="home active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="design"><a href="#design">Design</a></li>
+        <li class="contact"> <a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#777">
+    <a class="navbar-brand" href="#home" style="font-weight: bold;font-size: 22px;">
+      <img src="logof.jpg" style="padding-right: 5px;" width="35" height="35" class="d-inline-block align-top" alt="">
+      Ramesh Silver
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto">
+        <li class="home active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="design"><a href="#design">Design</a></li>
+        <li class="contact"> <a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar on small screens -->
+    <!-- <div id="navbarSupportedContent" class="demonav w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+      <a href="#design" class="w3-bar-item w3-button" onclick="toggleFunction()">Design</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+    </div> -->
+    <!-- <a href="javascript:void(0);" class="icon" onclick="toggleFunction()"></a> -->
+
+  <!-- main -->
+  <section id="home" id="carouselExampleFade" class="section carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="img/first.jpeg" class="d-block w-100" alt="first">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="img/second.jpeg" class="d-block w-100" alt="second">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="img/third.jpeg" class="d-block w-100" alt="third">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section w3-content w3-container w3-padding-64">
+    <h5 class="w3-center heading"><br>ABOUT US</h5><br>
+    <P>Since 2005, We are here for you. Ramesh silver presents various types of religious idols.
+      It will be an apt gift for special occasions and at festivals. 
+      It binds people together with its divine blessings.</P>
+    <p>Beautiful idols for your home is here! So, choose the idol of your choice from different sizes and
+      forms available at Ramesh Silver at the best affordable prices!
+      There are innumerable god, Indians pray to.
+      From silver shining ganesha to natraj, krishna to buddha, hanuman to sai baba,
+      datt guru to datt dardar, gajlaxmi to trimurti, one get an amazing spiritual decor
+      in a click! We are also with the pooja thali set, dining thali set, dry fruit box, wine glass ,etc.</p>
+    <p><img src="img/third.jpeg" onclick="onClick(this)" 
+      class="abt w3-round w3-image w3-hover-opacity" alt="Coffee beans">
+      There are many ways to gift people and make them feel special, but sometimes we need to choose something very
+      thoughtfully.
+      Something that they will never want to put away. What can be much better than an auspicious religious idol with
+      divine blessings?
+      Your loved ones will not only feel happy but also will have a positive attitude too.
+      Ramesh silver always provides you with the best customer experience and the certified silver quality.
+      Customer support is very Important. So, Do not miss the opportunity to get the best at the price never heard.
+      Why wait? Visit once for all that you want from Ramesh Silver!</p>
+  </section>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">100%</span><br>
+      Quality
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">100%</span><br>
+      Quareenty
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">100%</span><br>
+      Trust Worthy
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">1000+</span><br>
+      Happy Clients
+    </div>
+  </div>
+
+  <!-- Design Section -->
+
+  <section class="w3-content w3-container w3-padding-64" id="design">
+    <h5 class="heading w3-center"><br>DESIGNS</h5>
+
+    <div class="dropdown">
+      <button class="dropbtn">Category</button>
+      <div class="dropdown-content">
+      <div class="row">
+      <div class="column">
+        <h4>Idols</h4>
+        <a href="#">Pooja Set</a>
+        <a href="gheeloti.html">kalash</a>
+        <a href="glass.html">Link 3</a>
+        <a href="lota.html">Link 4</a>
+      </div>
+      <div class="column">
+        <h4 style="color: rgb(243, 239, 233);">Category 2</h4>
+        <a href="bowl.html">Bowl</a>
+        <a href="#">dinner set</a>
+        <a href="#">dry fruit</a>
+        <a href="plate.html">Plate</a>
+        <a href="glass.html">Glass</a>
+        <a href="#">Spoon</a>
+      </div>
+      <div class="column">
+        <h4>Category 3</h4>
+        <a href="gheeloti.html">Gheeloti</a>
+        <a href="lota.html">Lota</a>
+        <a href="#">Tray</a>
+      </div>
+      </div>
+    </div>
+    </div>
+   <p></p>
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <!-- <div class="w3-row-padding w3-center w3-section" id="glass" style="width:fit-content;height:fit-content">
+      <div class="w3-col m3">
+        <img src="Glass/bindi2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+        <h5>Bindi Glass</h5>
+      </div>
+
+      <div class="w3-col m3">
+        <img src="Glass/dholak.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="Glass/milk.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="Glass/rasna.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="Glass/st glass.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="Glass/whiskey.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="My beloved typewriter">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="Glass/zebra.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Empty ghost train">
+      </div>
+    </div> -->
+
+  <ul class="image-list-small">
+    <li>
+      <img src="Glass/zebra.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+        <div class="details">
+        <h3><a>In the subway</a></h3>
+      </div>
+    </li>
+    <li>
+      <img src="Glass/bindi2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <h3><a>In the subway</a></h3>
+      </div>
+    </li><li>
+      <img src="Glass/dholak.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <h3><a>In the subway</a></h3>
+      </div>
+    </li>
+    <li>
+      <img src="Glass/milk.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <h3><a>In the subway</a></h3>
+      </div>
+    </li>
+    <li>
+      <img src="Glass/rasna.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <p class="image-author">Earnest Leming</p>
+      </div>
+    </li>
+    <li>
+      <img src="Glass/st glass.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <p class="image-author">Edward Flint</p>
+      </div>
+    </li>
+    <li>
+      <img src="Glass/whiskey.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <p class="image-author">Rick Alpine</p>
+      </div>
+    </li>
+    <li>
+      <img src="Glass/zebra.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Saraswati idol">
+      <div class="details">
+        <p class="image-author">Stacy River</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" style="height: 65%;width: 65%;" class="w3-image w3-center">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div>For more designs visit on shop on the given location.</div>
+   </div><br>
+
+  <!-- (Contact Section) -->
+  <section class="section w3-content w3-container w3-padding-64" id="contact">
+    <h5 class="heading w3-center"><br>CONTACT US</h5><br>
+    <h6 class="w3-center">WHERE I cdiuqbfjebfj  WOFor more designs visit on shop on the given location. For more designs visit on shop on
+       the given location. For more designs visit on shop on the given location.RK</h6>
+
+    <div class="aboutme w3-padding-64">
+
+      <div class="hide w3-padding-32 w3-col w3-center s12 m12 l4 w3-container">
+        <img src="Glass/bindi.png" onclick="onClick(this)" style="margin: 0%;height: 250px;width: 250px;border: 1px solid black;" class="w3-image">
+      </div>
+
+      <!-- <div class=" w3-col s12 m4 l4 w3-center"> -->
+        <div class="w3-padding-16 w3-center w3-margin-bottom w3-col s12 m6 l4 w3-center">
+        <div  style="text-align: center;"><h4><b>Where We Work.</b></h4><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+         <b>Address :</b> 116, Gr.floor, 189/193,<br> 
+         <span style="padding-left: 9%;">Kapadai Bldg, Near Bank Of India,</span><br>
+         <span style="padding-left: 9%;">Zaveri Bazaar, Mumbai - 400002.</span><br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Tel No :</b> 022 23449872<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Mob No :</b> +91 9820083641<br>
+          <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+          <b>Email :</b> <a href="mailto:piyushgandhi599@gmail.com" style="color: rgb(51, 48, 48);text-decoration: none;">kishoregandhi642@mail.com</a><br></p>
+        </div></div>
+      <!-- </div> -->
+  
+      <!-- <div class="w3-padding-32 w3-col s12 m12 l4 w3-center w3-container"> -->
+      <div class="w3-padding-32 w3-col w3-center s12 m6 l4 w3-container">
+        <img src="location.jpg" onclick="onClick(this)" style="margin: 0%;height: 250px;width: 250px;border: 1px solid black;" class="w3-image">
+      </div>
+
+      
+    </div>
+  
+  </section>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-32">
+    <a href="#home" id="top" class="w3-button w3-light-grey w3-center"><i class="fa fa-arrow-up"></i></a>
+    <!-- <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    </div> -->
+    <h6>Copyright © All rights reserved. 2021. Ramesh Silver.</h6>
+  </footer>
+
+  <script src="shop.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
